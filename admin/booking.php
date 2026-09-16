@@ -4,10 +4,10 @@ session_start();
 
 include "../config/database.php";
 
-if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
+/*if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
     header("Location: ../login.php");
     exit;
-}
+}*/
 
 
 // ==========================================
@@ -156,90 +156,7 @@ $query = mysqli_query($conn, "
 
     <title>Kelola Booking</title>
 
-    <style>
-
-        body {
-            font-family: Arial;
-            background: #f4f6f9;
-            margin: 0;
-        }
-
-        .container {
-            padding: 30px;
-        }
-
-        h1 {
-            color: #1e3a5f;
-        }
-
-        .back {
-            display: inline-block;
-            margin-bottom: 20px;
-            text-decoration: none;
-            color: #1e3a5f;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-
-        th,
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background: #1e3a5f;
-            color: white;
-        }
-
-        .status {
-            padding: 5px 9px;
-            border-radius: 15px;
-            font-size: 12px;
-        }
-
-        .menunggu {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .disetujui {
-            background: #d5f5e3;
-            color: #1e8449;
-        }
-
-        .ditolak {
-            background: #fadbd8;
-            color: #922b21;
-        }
-
-        .dibatalkan {
-            background: #eee;
-        }
-
-        .aksi a {
-            text-decoration: none;
-            margin-right: 5px;
-        }
-
-        .setuju {
-            color: #27ae60;
-        }
-
-        .tolak {
-            color: #c0392b;
-        }
-
-        .batal {
-            color: #7f8c8d;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/admin/booking.css">
 
 </head>
 

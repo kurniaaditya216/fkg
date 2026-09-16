@@ -79,58 +79,7 @@ if (isset($_POST['simpan'])) {
 
     <title>Tambah Room</title>
 
-    <style>
-
-        body {
-            font-family: Arial;
-            background: #f4f6f9;
-        }
-
-        .container {
-            width: 600px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            color: #1e3a5f;
-        }
-
-        label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-
-        input,
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            height: 100px;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 12px 20px;
-            background: #1e3a5f;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        a {
-            margin-left: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/admin/room_tambah.css">
 
 </head>
 

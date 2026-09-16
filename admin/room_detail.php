@@ -4,10 +4,10 @@ session_start();
 
 include "../config/database.php";
 
-if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
+/*if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
     header("Location: ../login.php");
     exit;
-}
+}*/
 
 $id = (int) $_GET['id'];
 
@@ -33,36 +33,7 @@ if (!$data) {
 
     <title>Detail Room</title>
 
-    <style>
-
-        body {
-            font-family: Arial;
-            background: #f4f6f9;
-        }
-
-        .container {
-            width: 600px;
-            margin: 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        .data {
-            margin: 15px 0;
-        }
-
-        .label {
-            font-weight: bold;
-            color: #555;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/admin/room_detail.css">
 
 </head>
 
