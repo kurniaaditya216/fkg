@@ -65,7 +65,7 @@ if (isset($_POST['login'])) {
 
 <title>Login - FKG UNPAD</title>
 
-<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="assets/css/login.css">
 
 </head>
 

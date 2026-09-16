@@ -25,26 +25,12 @@ $query = mysqli_query($conn, "
 
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Booking Saya</title>
-
-    <link rel="stylesheet" href="../css/dosen/booking_saya.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Booking Saya - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="container">
-
-    <a href="index.php" class="back">
-        ← Dashboard
-    </a>
 
     <h1>Booking Saya</h1>
 
@@ -52,6 +38,9 @@ $query = mysqli_query($conn, "
         Daftar pemesanan room yang pernah kamu lakukan.
     </p>
 
+    <a href="index.php" class="btn">
+        ← Kembali
+    </a>
     <?php if (isset($_GET['success'])): ?>
 
     <div class="success">
@@ -132,6 +121,4 @@ $query = mysqli_query($conn, "
 
 </div>
 
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>

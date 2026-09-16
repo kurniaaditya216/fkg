@@ -147,25 +147,15 @@ $query = mysqli_query($conn, "
 
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Kelola Booking</title>
-
-    <link rel="stylesheet" href="../css/admin/booking.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Kelola Booking - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="container">
 
-    <a href="index.php" class="back">
-        ← Dashboard
+    <a href="index.php" class="btn">
+        ← kembali
     </a>
 
     <h1>Kelola Booking</h1>
@@ -281,6 +271,4 @@ $query = mysqli_query($conn, "
 
 </div>
 
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>

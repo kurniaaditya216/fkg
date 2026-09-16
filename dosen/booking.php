@@ -188,30 +188,14 @@ $rooms = mysqli_query($conn, "
 
 ?>
 
-<!DOCTYPE html>
-
-<html lang="id">
-
-<head>
-
-<meta charset="UTF-8">
-
-<title>Booking Room - FKG UNPAD</title>
-
-<link rel="stylesheet" href="../css/dosen/booking.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Booking Room - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 
 <div class="container">
 
-<nav class="navigation" aria-label="Navigasi dosen">
-    <a href="index.php">← Dashboard</a>
-    <a href="kalender.php">Kembali ke Kalender</a>
-    <a href="booking_saya.php">Booking Saya</a>
-</nav>
 
 
 <div class="card">
@@ -382,6 +366,9 @@ Keterangan
 
 </button>
 
+    <a href="index.php" class="btn">
+        kembali
+    </a>
 
 </form>
 
@@ -389,14 +376,4 @@ Keterangan
 
 </div>
 
-</body>
-
-</html>
-
-</div>
-
-</div>
-
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>

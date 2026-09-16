@@ -16,20 +16,10 @@ $query = mysqli_query(
 
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Kelola Room - FKG UNPAD</title>
-
-    <link rel="stylesheet" href="../css/admin/room.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Kelola Room - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="content">
 
@@ -40,7 +30,7 @@ $query = mysqli_query(
     <br>
 
     <a href="index.php" class="btn">
-        ← Dashboard
+        ← Kembali
     </a>
 
     <a href="room_tambah.php" class="btn">
@@ -148,6 +138,4 @@ $query = mysqli_query(
 
 </div>
 
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>

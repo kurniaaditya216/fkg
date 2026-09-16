@@ -14,16 +14,10 @@ $query = mysqli_query($conn, "
 ");
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Kelola User - FKG UNPAD</title>
-
-    <link rel="stylesheet" href="../css/admin/user.css">
-</head>
-
-<body>
+<?php
+$page_title = 'Kelola User - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="container">
 
@@ -32,7 +26,7 @@ $query = mysqli_query($conn, "
     <p>Kelola akun Admin dan Dosen FKG UNPAD.</p>
 
     <a href="index.php" class="btn">
-        ← Dashboard
+        ← Kembali
     </a>
 
     <a href="user_tambah.php" class="btn">
@@ -102,5 +96,4 @@ $query = mysqli_query($conn, "
 
 </div>
 
-</body>
-</html>
+<?php include "../layout/footer.php"; ?>

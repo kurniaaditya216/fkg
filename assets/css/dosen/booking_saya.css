@@ -1,10 +1,4 @@
-body {
-    font-family: Arial;
-    background: #f4f6f9;
-    margin: 0;
-}
-
-.content {
+.container {
     padding: 30px;
 }
 
@@ -22,15 +16,10 @@ h1 {
     margin-bottom: 20px;
 }
 
-.btn:hover {
-    background: #2d527d;
-}
-
 table {
     width: 100%;
     background: white;
     border-collapse: collapse;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 th,
@@ -45,35 +34,36 @@ th {
     color: white;
 }
 
-.aksi a {
-    text-decoration: none;
-    margin-right: 8px;
-}
-
-.edit {
-    color: #2980b9;
-}
-
-.detail {
-    color: #27ae60;
-}
-
-.hapus {
-    color: #c0392b;
-}
-
 .status {
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 15px;
     font-size: 13px;
 }
 
-.aktif {
+.menunggu {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.disetujui {
     background: #d5f5e3;
     color: #1e8449;
 }
 
-.nonaktif {
+.ditolak {
     background: #fadbd8;
     color: #922b21;
+}
+
+.dibatalkan {
+    background: #eee;
+    color: #555;
+}
+
+.success {
+    background: #d5f5e3;
+    color: #1e8449;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
 }

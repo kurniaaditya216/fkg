@@ -1,11 +1,6 @@
-body {
-    font-family: Arial;
-    background: #f4f6f9;
-}
-
 .container {
-    width: 500px;
-    margin: 50px auto;
+    width: 600px;
+    margin: 40px auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -21,10 +16,16 @@ label {
     margin-bottom: 5px;
 }
 
-input, select {
+input,
+textarea,
+select {
     width: 100%;
-    padding: 11px;
+    padding: 10px;
     box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
 }
 
 button {
@@ -34,9 +35,9 @@ button {
     color: white;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
-.error {
-    color: red;
-    margin: 15px 0;
+a {
+    margin-left: 10px;
 }

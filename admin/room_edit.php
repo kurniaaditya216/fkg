@@ -85,20 +85,10 @@ if (isset($_POST['update'])) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Edit Room</title>
-
-    <link rel="stylesheet" href="../css/admin/room_edit.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Edit Room - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="container">
 
@@ -192,6 +182,4 @@ if (isset($_POST['update'])) {
 
 </div>
 
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>

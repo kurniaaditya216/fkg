@@ -70,20 +70,10 @@ if (isset($_POST['simpan'])) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Tambah Room</title>
-
-    <link rel="stylesheet" href="../css/admin/room_tambah.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Tambah Room - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="container">
 
@@ -179,6 +169,4 @@ if (isset($_POST['simpan'])) {
 
 </div>
 
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>

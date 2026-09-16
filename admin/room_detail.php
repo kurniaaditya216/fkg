@@ -24,20 +24,10 @@ if (!$data) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Detail Room</title>
-
-    <link rel="stylesheet" href="../css/admin/room_detail.css">
-
-</head>
-
-<body>
+<?php
+$page_title = 'Detail Room - FKG UNPAD';
+include "../layout/header.php";
+?>
 
 <div class="container">
 
@@ -83,6 +73,4 @@ if (!$data) {
 
 </div>
 
-</body>
-
-</html>
+<?php include "../layout/footer.php"; ?>
