@@ -250,6 +250,7 @@ Sistem Manajemen Room
 <input
     type="email"
     name="email"
+    autocomplete="off"
     placeholder="Masukkan email"
     required
 >
@@ -262,6 +263,7 @@ Sistem Manajemen Room
 <input
     type="password"
     name="password"
+    autocomplete="new-password"
     placeholder="Masukkan password"
     required
 >
